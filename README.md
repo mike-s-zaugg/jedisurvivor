@@ -3,6 +3,9 @@ A fanpage dedicated to the game **"Star Wars: Jedi Survivor"**.
 
 > ⚠️ Please note: I am not affiliated with Star Wars, Lucasfilm, EA, or Jedi Survivor in any way.
 
+## About
+This is an **old project** I made some time ago and just uploaded to GitHub.  
+
 ## Fonts
 The fonts used in this project are **Samsung fonts**.  
 They are **not free for public use** and are included **only for local testing**.  

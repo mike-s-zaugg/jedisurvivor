@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Samsung Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sans Regular'), url('../font/SamsungSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Samsung Sans Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sans Thin'), url('../font/SamsungSans-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Samsung Sans Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sans Light'), url('../font/SamsungSans-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Samsung Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sans Medium'), url('../font/SamsungSans-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Samsung Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sans Bold'), url('../font/SamsungSans-Bold.woff') format('woff');
+}
+.parallax {
+
+  
+    /* Set a specific height */
+    min-height: 1500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed, fixed;
+    background-position: -200px center,center -300px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+  
+    /* Set a specific height */
+    min-height: 1500px;
+  
+    background-image:  url('../img/starwarsjedi-hero-lg-accolades-overlay-en-us-xl-16x91.png.adapt.crop16x9.1920w.png'), url('../img/i-made-desktop-mobile-wallpapers-versions-of-the-star-wars-v0-f1t3f6l2jo4a1.png');
+  }
+body {
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    margin-top: -200px;
+    height: 600vh;
+    overflow-x: hidden;
+}
+
+
+h1 {
+    font-family: 'Samsung Sans Regular';
+    font-size: 5rem;
+    text-align: center;
+}
+h2 {
+    font-family: 'Samsung Sans Regular';
+    font-size: 3rem;
+    text-align: center;
+}
+p{
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img {
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Passt das Bild an den Container an */
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: -400px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Stellt sicher, dass das zweite Bild das erste nicht überdeckt */
+}
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    transition: all 0.3s ease-in-out; /* Smooth transition for all changes */
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.nav-item {
+    margin: 0 20px;
+    font-family: 'Samsung Sans Regular';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.home-logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 50px;
+    height: auto;
+}
+.home-logo {
+    margin-right: auto; /* Push the logo to the left side */
+}
+.content {
+    padding: 20px;
+}
+
+.lightsaber-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 300px;  /* Abstand zum oberen Content */
+    position: relative;  /* Damit der Griff relativ zum Lichtschwert positioniert werden kann */
+}
+
+.lightsaber {
+    width: 10px;
+    height: 0;  /* Anfangshöhe auf 0 setzen */
+    background-color: #ffffff;
+    border-radius: 5px 5px 0px 0px;
+    transition: height 0.3s ease-out;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px 10px rgba(0, 255, 55, 0.7); 
+}
+
+.lightsaber-grip {
+    width: 10px;
+    height: 50px;  /* Höhe des Griffs */
+    background-color: #919191;  /* Dunklerer Farbton für den Griff */
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    bottom: -50px;  /* Der Griff wird direkt unter dem Lichtschwert positioniert */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lightsaber-option-button {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    margin: 0 10px; /* 20px space between each other (10px on each side) */
+}
+.lightsaber-option-button img{
+    border-radius: 20px;
+}
+.lightsaber-option{
+    display: flex;
+    justify-content: center;
+    margin-top: 500px;
+}
+.img-container{
+    width: 50%;
+    box-shadow: inset 10px 10px red;
+}
+.text-container{
+    width: 50%;
+    padding: 50px;
+}
+.container-img-text{
+    display: flex;
+    height: 500px;
+    margin-bottom: 140px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 1); /* Slightly opaque background for sticky state */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for visual separation */
+    transition: all 0.3s ease-in-out; /* Smooth transition for entering sticky */
+}
